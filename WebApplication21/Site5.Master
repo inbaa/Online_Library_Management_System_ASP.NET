@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site5.master.cs" Inherits="WebApplication21.Site5" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+       <%--our custom  css--%>
+    <link href="css/customStyleSheet1.css" rel="stylesheet" />
+        <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+        <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+        <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <section>
+             <div class="container">
+                   <div id="header">
+                 
+ <center><img src="imgs/logo1.JPG" class="img-fluid" alt="Responsive image"></center>
+                 
+                 </div>
+
+    </div>
+            </section>
+   
+  <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+         <a class="navbar-brand"  href="#">
+          <img src="imgs/unomm.jpg" width="30" height="30" />
+             DCSLIBRARY
+             </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="PageCommong.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <li class="nav-item active">
+        <a class="nav-link" href="Staff_details.aspx">Your Details</a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="search3.aspx">Search Books</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="about us.aspx">About us</a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="#">contact us</a>
+      </li>
+        
+     
+              <li class="nav-item active">
+          <a class="nav-link" href="PageCommon.aspx">Log Out</a>
+         
+                  </li>
+        
+  </div>
+      </nav>
+  </div>
+        <!-- Main content Placeholder -->
+
+        <div>
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+        </div>
+<footer>
+    <div id="footer1" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+
+
+    <p>All Rights Reserved.<a class="footerlinks" href="#"></a></p>
+                </div>
+            </div>
+        </div>
+</footer>
+       
+    </form>
+</body>
+</html>
